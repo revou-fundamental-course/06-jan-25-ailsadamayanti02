@@ -1,11 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <script src="js/script.js"></script>
 </head>
+
 <body>
+    <div id="name-form" class="name-form">
+        <label for="name">Masukkan Nama Anda:</label>
+        <input type="text" id="name" placeholder="Masukkan Nama Anda" />
+        <button onclick="greetUser()">Kirim</button>
+    </div>
+    <section class="hero" style="background-image: url('assets/bg\ hero.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">        
+        <div class="container">
+            <header class="navbar">
+                <div class="navbar__logo">
+                    <img src="assets/Logo.png" alt="brand" class="image__full-cover">
+                </div>
+                <div class="navbar__links">
+                    <a href="#home">Home</a>
+                    <a href="#profile">Our Profile</a>
+                    <a href="#porto">Portfolio</a>
+                    <a href="#message">Message Us</a>
+                </div>
+                <div class="navbar__hamburger" onclick="toggleMenu()">
+                    <span class="hamburger__icon"></span>
+                    <span class="hamburger__icon"></span>
+                    <span class="hamburger__icon"></span>
+                </div>
+            </header>
+            
     
+            <div class="hero__wrapper">
+                <div class="hero__heading">
+                    <h1 id="greeting">Hi, user! Welcome</h1>
+                    <p class="color__white">Kami hadir untuk membantu Anda menemukan berbagai solusi terbaik yang sesuai dengan kebutuhan Anda. Jelajahi berbagai pilihan yang kami tawarkan dan temukan yang paling cocok untuk Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="" id="profile">
+        <div class="container">
+            <div class="content__wrapper">
+                <div class="profile__wrapper">
+                    <div class="profile__heading">
+                        <h2>OUR PROFILE</h2>
+                        <p>platform yang menyediakan berbagai peluang dan informasi berharga untuk memenuhi kebutuhan Anda. Kami hadir untuk membantu individu dengan berbagai keahlian dengan mempertemukan mereka dengan peluang yang tepat. </p>
+                    </div>
+                    <div class="profile__image">
+                        <img class="image__full-cover" src="assets/our profile.png" alt="profile image">
+                    </div>
+                </div>
+                <div class="visimisi__content">
+                    <div class="visi__content">
+                        <div class="color__383780">Visi Kami</div>
+                        <p>Menjadi platform terdepan yang membantu masyarakat menemukan solusi terbaik dengan mudah.
+                        </p>
+                    </div>
+                    <div class="visi__content">
+                        <div class="color__383780">Misi Kami</div>
+                        <div class="misi__card-wrap">
+                            <div class="misi__card">
+                                <div class="label">1</div>
+                                <p>Memberikan kesempatan bagi individu dengan berbagai keahlian.</p>
+                            </div>
+                            <div class="misi__card">
+                                <div class="label">2</div>
+                                <p>Menyediakan informasi berkualitas dan terpercaya.</p>
+                            </div>
+                            <div class="misi__card">
+                                <div class="label">3</div>
+                                <p>Membangun koneksi yang saling menguntungkan antara individu dan komunitas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="porto">
+        <div class="container">
+            <div class="portofolio__wrapper">
+                <h1>PORTOFOLIO</h1>
+                <div class="protofolio__grid">
+                    <div class="misi__card flex__row">
+                        <div class="color__black">Portofolio 1</div>
+                        <img src="assets/basil_arrow-up-outline.svg" alt="arrow right">
+                    </div>
+                    <div class="misi__card flex__row">
+                        <div class="color__black">Portofolio 2</div>
+                        <img src="assets/basil_arrow-up-outline.svg" alt="arrow right">
+                    </div>
+                    <div class="misi__card flex__row">
+                        <div class="color__black">Portofolio 3</div>
+                        <img src="assets/basil_arrow-up-outline.svg" alt="arrow right">
+                    </div>
+                    <div class="misi__card flex__row">
+                        <div class="color__black">Portofolio 4</div>
+                        <img src="assets/basil_arrow-up-outline.svg" alt="arrow right">
+                    </div>
+                    <div class="misi__card flex__row">
+                        <div class="color__black">Portofolio 5</div>
+                        <img src="assets/basil_arrow-up-outline.svg" alt="arrow right">
+                    </div>
+                    <div class="misi__card flex__row">
+                        <div class="color__black">Portofolio 6</div>
+                        <img src="assets/basil_arrow-up-outline.svg" alt="arrow right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="location__wrapper">
+                <h1>OUR HEADQUARTER</h1>
+                <div class="location__grid">
+                    <div class="location__card-wrap">
+                        <div class="location__card">
+                            <div>Lokasi 1: Jl. Sudirman No. 123, Jakarta</div>
+                        </div>
+                        <div class="label">1</div>
+                    </div>
+                    <div class="location__card-wrap">
+                        <div class="location__card">
+                            <div>Lokasi 2: Jl. Gajah Mada No. 456, Medan</div>
+                        </div>
+                        <div class="label">2</div>
+                    </div>
+                    <div class="location__card-wrap">
+                        <div class="location__card">
+                            <div>Lokasi 3: Jl. Diponegoro No. 789, Bali</div>
+                        </div>
+                        <div class="label">3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="message">
+        <div class="container">
+            <div class="form__wrapper">
+                <div class="form__heading">
+                    <h2>MESSAGE US</h2>
+                </div>
+                <form class="form__wrap">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="birthdate">Tanggal Lahir</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                
+                    <label for="gender">Jenis Kelamin</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Pilih Jenis Kelamin</option>
+                        <option value="male">Laki-laki</option>
+                        <option value="female">Perempuan</option>
+                        <option value="other">Lainnya</option>
+                    </select>
+                
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                
+                    <button type="submit">Kirim</button>
+                </form>    
+            </div>        
+        </div>
+    </section>
 </body>
+
 </html>
+
